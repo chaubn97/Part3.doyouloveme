@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You muss love me</title>
+    <style href="styles.css"></style>
+</head>
+<body>
+<h1>Do you love me ?</h1> <br>
+<button id="yes" onclick="aler()" style="margin: 50px">Yes</button>
+<button id="no" style="margin: 50px ;position:relative;left:0; top:0;" onmouseover="nochance()">No</button>
+<script>
+    function aler() {
+        alert("Yes , you are right");
+    }
+
+    function nochance() {
+        let a = Math.floor(Math.random()*window.innerWidth) ;
+        let b = Math.floor(Math.random()*window.innerHeight) ;
+        let c = Math.floor(Math.random()*window.innerWidth) ;
+
+        let d = Math.floor(Math.random()*window.innerHeight) ;
+
+        let element = document.getElementById("no");
+        element.style.left = a+ 'px'
+        element.style.top =b+ 'px'
+        element.style.left = c + 'px'
+        element.style.top =d+ 'px'
+
+    }
+</script>
+</body>
+</html>
